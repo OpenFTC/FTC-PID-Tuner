@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.frogbots.ftcpidtuner.Controller">
+   <children>
+
+      <VBox prefHeight="50" prefWidth="100.0">
+         <children>
+            <Label fx:id="pTxtView" text="Proportional (Kp)" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Slider fx:id="pSlider" max="0.1" />
+                  <Label fx:id="pVal" text="val" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+
+       <VBox prefHeight="50" prefWidth="100.0">
+           <children>
+               <Label fx:id="iTxtView" text="Integral (Ki)" />
+               <HBox prefHeight="100.0" prefWidth="200.0">
+                   <children>
+                       <Slider fx:id="iSlider" max="0.1" />
+                       <Label fx:id="iVal" text="val" />
+                   </children>
+               </HBox>
+           </children>
+       </VBox>
+
+       <VBox prefHeight="50" prefWidth="100.0">
+           <children>
+               <Label fx:id="dTxtView" text="Derivative (Kd)" />
+               <HBox prefHeight="100.0" prefWidth="200.0">
+                   <children>
+                       <Slider fx:id="dSlider" max="0.1" />
+                       <Label fx:id="dVal" text="val" />
+                   </children>
+               </HBox>
+           </children>
+       </VBox>
+
+
+      <Button fx:id="startStopBtn" mnemonicParsing="false" onAction="#onStartStopBtnPress" text="Begin transmission"/>
+
+   </children>
+   <padding>
+      <Insets left="10.0" top="10.0" />
+   </padding>
+</VBox>
