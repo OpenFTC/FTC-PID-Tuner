@@ -2,6 +2,8 @@
 
 This is a tool for tuning PID loops on FTC robots in real time. Updated values are sent over UDP to the robot controller every 50ms.
 
+![screenshot here](https://github.com/OpenFTC/FTC-PID-Tuner/raw/master/main-screenshot.png)
+
 ## Setup instructions
 
  1. Download the pre-built jar from [here](https://github.com/OpenFTC/FTC-PID-Tuner/raw/master/out/artifacts/JavaFXApp/FTC-PID-Tuner-0.2-alpha.jar)
