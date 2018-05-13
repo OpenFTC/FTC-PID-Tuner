@@ -1,4 +1,4 @@
-# FTC-PID-Tuner
+## FTC-PID-Tuner has been replaced with [FTC-OpMode-Tuner](https://github.com/OpenFTC/FTC-OpMode-Tuner)
 
 This is a tool for tuning PID loops on FTC robots in real time. Updated values are sent over UDP to the robot controller every 50ms.
 
